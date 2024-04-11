@@ -1,0 +1,29 @@
+﻿<Window x:Class="homeWorkNumber13._2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:homeWorkNumber13._2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="supportGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <RadioButton x:Name="radioRead" Content="Красный" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="22" FontFamily="Agency FB" Padding="0,-8,2,0" Margin="0,8,0,0" Checked="radioRead_Checked"/>
+        <RadioButton x:Name="radioYellow" Content="Желтый" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="22" FontFamily="Agency FB" Padding="0,-8,2,0" Margin="0,8,0,0" Grid.Row="1" Checked="radioYellow_Checked"/>
+        <RadioButton x:Name="radioGreen_" Content="Зеленый" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="22" FontFamily="Agency FB" Padding="0,-8,2,0" Margin="0,8,0,0" Grid.Row="2" Checked="radioGreen__Checked"/>
+
+        <Rectangle Fill="#FF9A9A9A" Grid.Column="1" Grid.RowSpan="3"/>
+        <Rectangle x:Name="colorBox" Grid.Column="1" Fill="#FF9A9A9A" Grid.Row="0"/>
+
+    </Grid>
+</Window>

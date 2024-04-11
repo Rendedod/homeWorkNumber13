@@ -1,0 +1,30 @@
+﻿<Window x:Class="homeWorkNumber13._3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:homeWorkNumber13._3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Введите число:" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="22"/>
+        <TextBox x:Name="myText" Grid.Row="1" Margin="270,0,270,0" PreviewTextInput="myText_PreviewTextInput" KeyUp="myText_KeyUp"/>
+
+        <RadioButton Grid.Row="3" VerticalAlignment="Top" HorizontalAlignment="Center" Content="Двоичная" FontSize="18" Padding="0, -7, 0, 0" Margin="-150,0,0,0" Checked="RadioButton_Checked_1"/>
+        <RadioButton Grid.Row="3" VerticalAlignment="Bottom" HorizontalAlignment="Center" Content="Восьмеричная" FontSize="18" Padding="0, -7, 0, 0" Margin="-110,0,0,0" Checked="RadioButton_Checked"/>
+
+        <Label Content="Результат:" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="4" FontSize="18"/>
+        <Label x:Name="decision" Content="***" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="5" FontSize="18"/>
+
+    </Grid>
+</Window>
